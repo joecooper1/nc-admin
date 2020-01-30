@@ -34,7 +34,13 @@ class Stats extends React.Component {
 						<br />
 						Average grad rate:
 					</li>
+					<li>
+						Graduated:
+						<br />
+						Average grad time:
+					</li>
 				</ul>
+				<p>PATHWAYS</p>
 			</main>
 		);
 	}

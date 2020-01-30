@@ -1,10 +1,11 @@
 import React from 'react';
 
-const StudentList = () => {
+const StudentList = (props) => {
 	return (
 		<main>
 			<h1>List of students:</h1>
-			<p>STUDENTS LIST</p>
+			<p>Students list here</p>
+			<button>Graduate selected</button>
 		</main>
 	);
 };
