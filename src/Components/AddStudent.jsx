@@ -8,7 +8,7 @@ class AddStudent extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} id="addBar">
         Add a new student:
         <input
           type="text"

@@ -8,7 +8,7 @@ class Student extends React.Component {
 
   render() {
     return (
-      <main>
+      <main id="student">
         <p> Student Name: {this.props.display_student.name}</p>
         <br />
         <p> Cohort: {this.props.display_student.startingCohort}</p>

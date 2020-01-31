@@ -9,7 +9,7 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} id="searchBar">
         <label>
           Search:
           <select
