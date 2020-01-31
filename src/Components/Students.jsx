@@ -94,6 +94,16 @@ class Students extends React.Component {
 
   graduateStudents = event => {
     event.preventDefault();
+    const non_graduating_students = this.state.student_list.filter(
+      ({ _id }) => {
+        return this.state.graduating_students.indexOf(_id) < 0;
+      }
+    );
+    non_graduating_students.map(({ _id }) =>
+      axios.patch(
+        `https://nc-student-tracker.herokuapp.com/api/students/${_id}?progress=false`
+      )
+    );
     this.state.graduating_students.map(student =>
       axios
         .patch(
