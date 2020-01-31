@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import '../App.css';
 
 const Header = () => {
 	return (
-		<header>
-			<Link to="/">NC ADMIN DATABASE</Link>;
+		<header id="header">
+			<Link to="/" className="removeUnderline">
+				<p>NC ADMIN DATABASE</p>
+			</Link>
 			<nav>
-				<Link to="/">Home</Link>
-				<Link to="/students">Search students</Link>
+				<Link to="/" className="removeUnderline">
+					<p>Home</p>
+				</Link>
+				<Link to="/students" className="removeUnderline">
+					<p>Search students</p>
+				</Link>
 			</nav>
 		</header>
 	);
